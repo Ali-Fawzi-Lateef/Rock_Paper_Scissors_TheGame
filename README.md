@@ -12,4 +12,5 @@ Nobody wins , a very simple game.
 i Made a class for that in C++ and i made a function to generate a Random Number from 1-3 as a selection for the Computer
 and i check the Players Selection to see which one won the Game whether it's the Computer OR the Player.
 the game made from three files you can browes them in this repository.
-Thank you for Reading.
+
+Thank you for Reading ,and i hope you like it.
