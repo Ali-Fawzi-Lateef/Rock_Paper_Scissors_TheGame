@@ -29,7 +29,7 @@ int RPS::GenerateNum() {
 	std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 3); // distribution in range [1, 3]
 	return dist6(rng);
 }
-void RPS::ChechWin() {
+void RPS::CheckWin() {
 	int x = GenerateNum();
 	if (choiec == 1 && x == 2) {
 		std::cout << "Computer :PAPER.\n";
