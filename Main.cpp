@@ -8,6 +8,6 @@ int main() {
 		std::cout << "\n\nSELECT(0 To Quit): ";
 		std::cin >> input;
 		RPS RockPaperScissors{ input };
-		RockPaperScissors.ChechWin();
+		RockPaperScissors.CheckWin();
 	} while (input != "0");
 }
