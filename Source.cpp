@@ -24,14 +24,14 @@ RPS::RPS(std::string selection) //checking the selection ,to set it to choiec.
 		SetValue(7);
 }
 int RPS::GenerateNum() { 
-	std::random_device dev;
+	std::random_device dev; //that one is better then the normal rand and srand functions.
 	std::mt19937 rng(dev());
 	std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 3); // distribution in range [1, 3]
 	return dist6(rng);
 }
 void RPS::CheckWin() {
 	int x = GenerateNum();
-	if (choiec == 1 && x == 2) {
+	if (choiec == 1 && x == 2) { // check which one would win.
 		std::cout << "Computer :PAPER.\n";
 		std::cout << "PAPER cover's the ROCK, Computer won!";
 		Computer++;
@@ -81,7 +81,7 @@ void RPS::CheckWin() {
 		std::cout << "Invalid selection please try again ^_^";
 	
 }
-void RPS::Result() {
+void RPS::Result() { //result 
 	std::cout << "Player " << Player << " : "<< Computer << " Computer";
 	if (Player > Computer)
 	{
