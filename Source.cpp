@@ -1,12 +1,12 @@
 #include "Header.h"
 #include <iostream>
-#include <random>
-#include <cassert>
-void RPS::SetValue(int x) {
+#include <random> //for random number.
+#include <cassert> //for random number.
+void RPS::SetValue(int x) { //set the value to choiec.
 	choiec = x;
 }
 int Player , Computer;
-RPS::RPS(std::string selection)
+RPS::RPS(std::string selection) //checking the selection ,to set it to choiec.
 {
 	if (selection == "rock" || selection == "ROCK") {
 		SetValue(1);
@@ -23,7 +23,7 @@ RPS::RPS(std::string selection)
 	else
 		SetValue(7);
 }
-int RPS::GenerateNum() {
+int RPS::GenerateNum() { 
 	std::random_device dev;
 	std::mt19937 rng(dev());
 	std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 3); // distribution in range [1, 3]
