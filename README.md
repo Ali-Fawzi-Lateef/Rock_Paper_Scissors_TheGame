@@ -13,4 +13,6 @@ i Made a class for that in C++ and i made a function to generate a Random Number
 and i check the Players Selection to see which one won the Game whether it's the Computer OR the Player.
 the game made from three files you can browes them in this repository.
 
+// you gonna notice that i wrote a lot of comment but i want everyone to understand my code.
+
 Thank you for Reading ,and i hope you like it.
