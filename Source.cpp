@@ -1,6 +1,6 @@
 #include "Header.h"
 #include <iostream>
-#include <random> //for random number
+#include <random> //for random number.
 #include <cassert> //for random number
 void RPS::SetValue(int x) { //set the value to choiec
 	choiec = x;
