@@ -1,12 +1,12 @@
 #include "Header.h"
 #include <iostream>
-#include <random> //for random number.
-#include <cassert> //for random number.
-void RPS::SetValue(int x) { //set the value to choiec.
+#include <random> //for random number
+#include <cassert> //for random number
+void RPS::SetValue(int x) { //set the value to choiec
 	choiec = x;
 }
 int Player , Computer;
-RPS::RPS(std::string selection) //checking the selection ,to set it to choiec.
+RPS::RPS(std::string selection) //checking the selection ,to set it to choiec
 {
 	if (selection == "rock" || selection == "ROCK") {
 		SetValue(1);
@@ -24,14 +24,14 @@ RPS::RPS(std::string selection) //checking the selection ,to set it to choiec.
 		SetValue(7);
 }
 int RPS::GenerateNum() { 
-	std::random_device dev; //that one is better then the normal rand and srand functions.
+	std::random_device dev; //that one is better then the normal rand and srand functions
 	std::mt19937 rng(dev());
 	std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 3); // distribution in range [1, 3]
 	return dist6(rng);
 }
 void RPS::CheckWin() {
 	int x = GenerateNum();
-	if (choiec == 1 && x == 2) { // check which one would win.
+	if (choiec == 1 && x == 2) { // check which one would win
 		std::cout << "Computer :PAPER.\n";
 		std::cout << "PAPER cover's the ROCK, Computer won!";
 		Computer++;
