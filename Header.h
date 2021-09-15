@@ -1,7 +1,7 @@
 #ifndef HEADER
 #define HEADER
 #include <string>
-class RPS // stands for "Rock Paper Scissors".
+class RPS // stands for "Rock Paper Scissors"
 {
 	int choiec;
 public:
