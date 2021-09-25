@@ -9,7 +9,7 @@ public:
 	void SetValue(int x); // seting the input value to choiec.
 	int GenerateNum(); // generating a random number as a computer selection.
 	void CheckWin(); // checking who won.
-	void Result(); // printing the final result
+	void Result(); // printing the final result.
 };
 #endif 
 
