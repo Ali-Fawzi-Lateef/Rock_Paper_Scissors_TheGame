@@ -31,7 +31,7 @@ int RPS::GenerateNum() {
 }
 void RPS::CheckWin() {
 	int x = GenerateNum();
-	if (choiec == 1 && x == 2) { // check which one would win
+	if (choiec == 1 && x == 2) { // check which one would win.
 		std::cout << "Computer :PAPER.\n";
 		std::cout << "PAPER cover's the ROCK, Computer won!";
 		Computer++;
@@ -81,7 +81,7 @@ void RPS::CheckWin() {
 		std::cout << "Invalid selection please try again ^_^";
 	
 }
-void RPS::Result() { //result
+void RPS::Result() { //result.
 	std::cout << "Player " << Player << " : "<< Computer << " Computer";
 	if (Player > Computer)
 	{
