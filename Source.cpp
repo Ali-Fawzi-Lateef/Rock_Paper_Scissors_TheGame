@@ -26,7 +26,7 @@ RPS::RPS(std::string selection) //checking the selection ,to set it to choiec.
 int RPS::GenerateNum() { 
 	std::random_device dev; //that one is better then the normal rand and srand functions.
 	std::mt19937 rng(dev());
-	std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 3); // distribution in range [1, 3]
+	std::uniform_int_distribution<std::mt19937::result_type> dist6(1, 3); // distribution in range [1, 3].
 	return dist6(rng);
 }
 void RPS::CheckWin() {
