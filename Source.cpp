@@ -6,7 +6,7 @@ void RPS::SetValue(int x) { //set the value to choiec.
 	choiec = x;
 }
 int Player , Computer;
-RPS::RPS(std::string selection) //checking the selection ,to set it to choiec
+RPS::RPS(std::string selection) //checking the selection ,to set it to choiec.
 {
 	if (selection == "rock" || selection == "ROCK") {
 		SetValue(1);
