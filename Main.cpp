@@ -1,7 +1,7 @@
 #include "Header.h"
 #include <iostream>
 int main() {
-	system("color 3");    //set colur to white blue
+	system("color 3");    // set colur to white blue
 	std::string input;
 	std::cout << "\tROCK  --  PAPER  --  SCISSORS \n";
 	do {
