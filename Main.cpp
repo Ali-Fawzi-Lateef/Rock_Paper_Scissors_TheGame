@@ -1,4 +1,4 @@
-#include "Header.h"   
+#include "Header.h"     
 #include <iostream>      
 int main() {
 	system("color 3");   // set colur to white blue.
