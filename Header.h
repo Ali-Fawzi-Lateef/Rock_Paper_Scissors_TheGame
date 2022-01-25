@@ -1,4 +1,4 @@
-#ifndef HEADER
+#ifndef HEADER 
 #define HEADER
 #include <string>
 class RPS // stands for "Rock Paper Scissors".
